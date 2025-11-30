@@ -112,3 +112,44 @@ function changeSlide(direction){
 </script>
 </body>
 </html>
+<!-- ===================== GALLERY SECTION ===================== -->
+
+<section id="gallery">
+    <h2>My Sketches Gallery 🎨</h2>
+    <p>Here are some of my drawings & artwork 😍</p>
+
+    <div class="gallery-container">
+        <img src="images/sketch1.jpg" alt="Sketch 1">
+        <img src="images/sketch2.jpg" alt="Sketch 2">
+        <img src="images/sketch3.jpg" alt="Sketch 3">
+        <img src="images/sketch4.jpg" alt="Sketch 4">
+        <img src="images/sketch5.jpg" alt="Sketch 5">
+    </div>
+</section>
+
+<style>
+    #gallery{
+        text-align:center;
+        margin-top:60px;
+    }
+    #gallery h2{
+        font-size:28px;
+        margin-bottom:10px;
+    }
+    .gallery-container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+    .gallery-container img{
+        width:200px;
+        height:auto;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.3);
+        transition:0.3s;
+    }
+    .gallery-container img:hover{
+        transform:scale(1.05);
+    }
+            </style>
